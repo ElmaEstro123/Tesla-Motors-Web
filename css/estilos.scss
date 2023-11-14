@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Zilla+Slab:wght@700&display=swap');
+
+/*Variables de SCSS*/
+$color-primario: black;
+$Font-titulo: 'Zilla Slab';
+$Font-texto: 'Sawarabi Gothic';
+
+nav, h1, h3, h5{
+    font-family: $Font-titulo, serif;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+h1{ font-size: 3.125em;}
+
+h3{ font-size: 2.5em; }
+
+h5{ font-size: 1.875em;}
+
+p, .card-link, .btn, form, #MiModal{
+    font-family: $Font-texto, sans-serif;
+    font-size: .9375em; 
+}
+
+/*Configuración del Carousel*/
+.carousel-indicators [data-bs-target]{
+background-color: $color-primario;
+}
+
+.carousel-img {
+    height: 32.5625em;
+    object-fit: cover;
+  }
+
+.carousel-caption {
+    color: $color-primario;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+.carousel-control-next-icon {
+background-image: url(../imagenes/next.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../imagenes/prev.png);
+    }
+
+/*Configuración de las Cartas*/
+
+
+#Cartas{
+    margin-top: 13.6875rem;
+
+}
+
+/*Configuración de la Carta con Imagen*/
+#CartaImagen{
+    max-width: 75.0625rem;
+    margin-top: 13.6875rem;
+    text-align: justify;
+}
+
+#CartaImagen img, #Charger{
+    height: 23.5625rem;
+
+}
+#CartaImagen img{
+    border-radius: 3.125rem; 
+}
+  
+
+#CartaImagen button{
+    background-color: $color-primario;
+    border: none;
+
+}
+
+#Charger{
+    position: relative;
+    padding-left: 5.625rem;
+    padding-top: 1.3125rem;
+}
+
+.btn-custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5.625rem;
+    margin-bottom: 1.3125rem;
+  }
+
+/*Configuración de ultimo Titulo*/
+#Titulo2{
+    max-width: 75.0625rem;
+    text-align: center;
+    margin-top: 15.625rem;
+
+}
+
+/*Configuración de las Imagenes*/
+#ImgSpaceX{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+#ImagenFalcon{
+    border-radius: 0 0 3.125rem 0;
+}
+
+#ImagenStarship{
+    border-radius: 0 0 0 3.125rem;
+}
+
+/*Configuración del Footer*/
+footer{
+    height: 50vh;
+    background-color: #F4F0EC;
+}
+
+#Titulo1{
+    margin-left: 24rem;
+    padding-top: 8.375rem;
+
+@media (max-width: 768px) {
+    margin-left: 10%;
+    padding-top: 6rem; 
+  }
+}
